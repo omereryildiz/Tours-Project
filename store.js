@@ -13,11 +13,13 @@ function ready() {
         var button = removeCartItemButtons[i] 
         button.addEventListener('click', removeCartItem)
     }
+    
     var quantityInputs = document.getElementsByClassName('cart-quantity-input')
     for(var i=0; i<quantityInputs.length; i++) {
         var input = quantityInputs[i]
         input.addEventListener('change', quantityChanged)
     }
+    
     var addCartButton = document.getElementsByClassName('shop-item-button')
     for(var i=0; i<addCartButton.length; i++) {
         var button = addCartButton[i]
