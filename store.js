@@ -11,6 +11,7 @@ function ready() {
         var button = removeCartItemButtons[i]
         button.addEventListener('click', removeCartItem)
     }
+    
     var quantityInputs = document.getElementsByClassName('cart-quantity-input')
     for(var i=0; i<quantityInputs.length; i++) {
         var input = quantityInputs[i]
